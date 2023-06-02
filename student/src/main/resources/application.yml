@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: student-module
+  datasource:
+    url: jdbc:mysql://localhost:3306/ms_1_student?useSSL=false
+    username: root
+    password: password
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+    show-sql: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8085/eureka
+   
+      
